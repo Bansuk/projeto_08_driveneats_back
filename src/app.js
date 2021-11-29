@@ -8,6 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/products', receiveProducts);
+app.get('/products/:type', receiveProducts);
 
 export default app;
